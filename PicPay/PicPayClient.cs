@@ -14,6 +14,7 @@ namespace PicPay
         {
             if (string.IsNullOrEmpty(token))
                 throw new ArgumentException("Token is null or empty");
+
             Token = token;
             if (HttpClient == null)
             {
